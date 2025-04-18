@@ -1,0 +1,182 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Ensures elements stack vertically */
+  align-items: stretch; /* Makes navbar span full width */
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+nav{
+  background-color: #D98324;
+}
+
+footer{
+  background-color: #443627;
+}
+
+.carousel-item img {
+  height: 400px !important;  /* Ensures height is applied */
+  object-fit: cover;  /* Prevents image distortion */
+}
+
+.carousel-img {
+  height: 80vh; /* Adjust height */
+  object-fit: cover; /* Prevent stretching */
+}
+
+/* Home.css */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  background-color: #f8f9fa;
+}
+
+.about-content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Waste Management Insights Section */
+.insights-section {
+  text-align: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+}
+
+.insights-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.insight-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.insight-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.insight-card .card-body {
+  padding: 15px;
+}
+
+.insight-card h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.insight-card p {
+  font-size: 1rem;
+  color: #555;
+}
