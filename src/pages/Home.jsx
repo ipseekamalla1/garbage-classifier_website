@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSlider from "../components/HeroSlider";
 import { Container, Row, Col, Card, Button } from "react-bootstrap"; // Bootstrap Components
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,6 +11,15 @@ const Home = () => {
 
       {/* Waste Management Insights Section */}
       <section className="container my-5">
+    {/* Garbage Classification Link Area */}
+  <div className="classification-section text-center mb-4">
+    <p className="classify-text">Click here to classify garbage</p>
+    <Link to="/classify">
+      <Button className="classify-btn" size="lg">
+        Garbage Classification
+      </Button>
+    </Link>
+  </div>
         <h2 className="text-center mb-4">Waste Management Insights</h2>
         <Container>
           <Row className="gy-4">

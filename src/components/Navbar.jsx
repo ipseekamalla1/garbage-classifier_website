@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img src="/images/nobg-logo.png" alt="Milton Waste Management Logo" />
-          Milton Waste Management
+          Domestic Waste Classification
         </Link>
 
         <button 

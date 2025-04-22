@@ -180,3 +180,30 @@ footer{
   font-size: 1rem;
   color: #555;
 }
+
+.classification-section {
+  margin-top: 20px;
+}
+
+.classify-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.classify-btn {
+  background: linear-gradient(90deg, #28a745, #20c997);
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.classify-btn:hover {
+  background: linear-gradient(90deg, #218838, #17a589);
+  transform: translateY(-2px);
+}
